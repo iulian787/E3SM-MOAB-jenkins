@@ -82,7 +82,7 @@ cd cime/scripts
 
 timestamp=`date +"%Y%m%d_%H%M%S"`
 # Try with different layout
-./create_newcase --case ${WORKSPACE}/e3sm_tests/JENKINS/A_WCYCL1850_$timestamp --res ne11_oQU240 --compset A_WCYCL1850 --compiler gnu --driver moab --walltime 00:31:40
+./create_newcase --case ${WORKSPACE}/e3sm_tests/JENKINS/A_WCYCL1850_$timestamp --res ne11_oQU240 --compset A_WCYCL1850 --compiler gnu --driver moab --walltime 00:31:40 --output-root ${WORKSPACE}/e3sm_tests/JENKINS/A_WCYCL1850_$timestamp
 cd ${WORKSPACE}/e3sm_tests/JENKINS/A_WCYCL1850_$timestamp
 ./xmlchange NTASKS=4
 ./xmlchange NTASKS_OCN=8
